@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.body-button{
+    display: none;
+}
+
+.sortimg {
+    background: url(sort4.png) right no-repeat;
+    padding: 7px;
+}
+
+input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.nav-bar{
+    width: 100%;
+    height: 100%; 
+}
+
+.nav-bar > div {
+    display: inline-block;
+    margin: 0 50px 0 30px;
+}
+
+.nav2{
+    float: right;
+}
+
+.main-body{
+    width: 100%;
+    display: inline-block;
+    background-color: #C4C4C4;
+}
+
+.sidebar{
+    display: inline-block;
+    width: 20%;
+    background-color: #093E9c;
+    padding: 10px;
+    float: left;
+    /* text-align: center; */
+    font-size: 10.5px;
+}
+
+.sidebar-menu{
+    color: #fff;
+    width: 100%;
+    /* margin-bottom: 1rem; */
+    padding-left: 0.5rem;
+} 
+
+.inner-body{
+    width: 78%;
+    /* background-color: white; */
+    background-color: #f9f9f9;
+
+    /* height: 100vh; */
+    /* display: inline-block; */
+    float: right;
+    /* padding: 15px; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.input-container{
+    margin: 20px 15px 0 15px; 
+}
+.input-box{
+    float: left;
+    color: darkviolet;
+}
+button{
+    border-radius: 20px;
+    padding:12px;
+    border:none;
+    cursor: pointer;
+    font-size: 12px;
+    width: 80%; 
+}
+table{
+   width: 99%; 
+}
+tr,td{
+    text-align: center;
+}
+
+table tr{
+ padding: 50px;   
+}
+
+.nav2 > img:first-child{
+    /* background-color: red; */
+    margin-right: 30px;
+}
+
+.dash-div{
+    margin: 0 0 10px 20px;
+    color: #fff;
+}
+
+.inventory-box{
+    /* display: inline-block; */
+    float: left;
+    width: 50%;
+    /* margin: 5px; */
+}
+
+.inventory-box > input{
+    width: 50%;
+}
+
+/* .top-top{ */
+    /* overflow-x:auto */
+
+    /* overflow: auto;
+    white-space: nowrap; */
+/* } */
+
+
+.top-top > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0 0 10px;
+
+    /* overflow: auto;
+    white-space: nowrap; */
+}
+
+.top-top > a:nth-child(2) {
+    margin-left: 50px;
+}
+
+.top-top > a:nth-child(3), .top-top > a:nth-child(4), .top-top > a:nth-child(5) {
+    float: right;
+}
+
+.custom-file{
+    /* width: 100%; */
+    /* display: flex; */
+    /* padding: 0 6px 0 6px; */
+    /* background-color: chocolate; */
+    margin: auto 0;
+    /* text-align: center; */
+}
+
+.custom-upload{
+    /* background-color: red; */
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    border-right: none;
+    
+    /* width: 140px; */
+    /* float: left; */
+    /* width: 45%; */
+    /* flex: 0 0 65%; */
+}
+
+.upload-button{
+    background-color: #093E9c;
+    color: #fff;
+    display: inline-block;
+    margin-left: -4px;
+    padding: 4px;
+
+    border: 1px solid #093E9c;
+    border-radius: 0 25px 25px 0;
+    border-left: none;
+
+    /* width: 90px; */
+    /* width: 50%;
+    float: left; */
+    /* width: 100px; */
+    /* padding: 0 25px; */
+    /* border-radius: 0 25px 25px 0; */
+    /* display: inline-block; */
+    /* flex: 1; */
+}
+
+#file-upload{
+    display: none;
+} 
+
+.style-1{
+    border-radius: 50px;
+    border: 1px solid #093E9c;
+    display: inline-block;
+}
+
+.style-2{
+    border-radius: 50px;
+    background-color: #093E9c;
+    color: white;
+}
+td {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;  
+    color:rgb(10, 10, 10);
+    /* font-weight: 800; */
+  }
+  
+  td:first-child {
+    padding-left:10px;
+    padding-right:0;
+  }
+
+  /* @media only screen and (max-width: 600px) {
+    .sidebar-brand{
+        background-color: blue;
+    }
+.nav2{
+   background-color: chartreuse;
+}
+.sidebar{
+    display: inline-block;
+/ */
+
+
+
+/* ----------------------- */
+
+.modal {
+    font-size: 16px;  
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 50px;
+    border: 1px solid #093E9c;
+    float: right;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0 0 10px;
+  }
+  .modal-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /* min-width: 360px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 30px 0 0 -280px;
+    /* --- */
+    padding: 10px;
+  }
+  .menu{
+      /* background-color: purple; */
+      font-size: 14pxs;
+  }
+    .fa-google-drive, .fa-folder-plus{
+      background-color: rgb(229, 229, 234);
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 30px;
+      
+  }
+   .drivecontent{     
+   text-align: center;
+   /* background-color: blue; */
+   float: left;
+   width: 50%;
+   height: 10px;
+   font-size: 12px;
+}
+.drivecontent2{
+   /* background-color: palevioletred; */
+   float: right; 
+   width: 50%;
+   height: 100px;
+    position: relative;
+    /* right: 10px; */
+    /* top: 100px; */
+    bottom: 18px;
+font-size: 12px;
+}
+.style1{
+    background-color: blue;
+    width: 250px;
+    height: 25px;
+    border: none;
+    padding: 0 25px;
+    border-radius:  25px 0 0 25px;
+    display: inline-block;
+}
+
+  .modal2 {
+    font-size: 16px;  
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 50px;
+    border: 1px solid #093E9c;
+    float: right;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0 0 10px;
+  }
+  .modal-content2 {
+    display: none;
+     position: absolute;
+    background-color: #f9f9f9;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 30px 0 0 -340px;
+    /* --- */
+    padding: 18px;
+  }
+  
+   .modal-content a:hover {
+    background-color: #ddd;  
+  } 
+  .modal:hover .modal-content {
+    /* display: block; */
+  } */
+  
+  .modal-content2 a:hover {
+    background-color: #ddd;
+  }
+  .modal:hover .dropdown-content2 {
+    /* display: block; */
+  }
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .sidebar{
+        display: none;
+        width: 95%;
+    }
+
+    .inner-body{
+        width: 100%;
+    }
+
+    .body-button{
+        display: block;
+        padding: 6px;
+        color: #53678a;
+        border: 3px solid;
+        display: inline-block;
+        margin: 8px 0 8px 8px;
+        border-radius: 6px;
+    }
+
+    .top-top > a{
+        font-size: 10px;
+        font-weight: bold;
+        /* float: left; */
+        /* margin: 0 0 0 0; */
+
+        /* overflow: auto;
+        white-space: nowrap; */
+    }
+
+    .nav-bar{
+        margin: 0;
+        padding: 0;
+        /* background-color: green; */
+        display: inline-block;
+        /* margin: 0 0 0 -70px; */
+    }
+
+    .nav2{
+        float: right;
+    }
+
+    /* .nav-bar > div{ */
+        /* float: right;         */
+    /* } */
+
+    .nav2 > img{
+        width: 40px;        
+    }
+
+    .sidebar-brand > img{
+        width: 100px;
+    }
+    .modal-content{
+        
+    }
+    .modal-content2{
+        width: 100%; 
+    }
+}

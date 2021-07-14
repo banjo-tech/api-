@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./login.js" defer></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="sidebar-brand">
+            <img src="Logo.png"; alt="logo">
+        </div>
+
+        <div class="nav2">
+            <img src="image11.png"; alt="logo">
+            <img src="Ellipse6.png"; alt="logo">  
+        </div>
+      
+    </div>
+
+    
+    
+    <div class="main-body">
+        <div class="body-button" onclick="toggleButton()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <br>
+                <div class="dash-div"><a href="../user-dashboard/index.html"></a><i class="fa fa-th" aria-hidden="true"></i> Dashboard</a></div>
+                 FILTER PRODUCTS
+                <div class="input-container Tags">
+                    <label for="Tags">Tags</label>
+                    <br>
+                    <input type="text" id="tags" class="sortimg" value="" placeholder="Filter by tags"/>
+                </div>
+                <div class="input-container SKU">
+                    <label for="sku">SKU</label>
+                    <br>
+                    <input type="text" id="SKU" class="sortimg" value="" placeholder="Filter by sku" />
+                </div>
+                    <div class="input-container conditions">
+                    <label for="conditions">Conditions</label>
+                    <br>
+                    <input type="text" id="Conditions" class="sortimg" value="" placeholder="All conditions"/>
+                </div>
+                <div class="input-container Category">
+                    <label for="Name">Category</label>
+                    <br>
+                    <input type="text" id="Catergory" class="sortimg" value="" placeholder="All Catergory"/>
+                </div>
+                <div class="input-container location">
+                    <label for="location">Location</label>
+                    <br>
+                    <input type="text" id="location" class="sortimg" value="" placeholder="All location"/>
+                </div>
+
+                
+                <div>
+                    <h3>Inventory</h3>
+                </div>
+
+                <div class="">
+                    <div class="inventory-box">
+                        <label for="from">From</label>
+                        <br>
+                        <input type="text" id="from" value="" placeholder=""/>
+                    </div>
+                    <div class="inventory-box">
+                        <label for="to">To</label>
+                        <br>
+                        <input type="text" id="to" value="" placeholder=""/>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div>
+
+                    <input type="radio" id="Available" name="inventory"> 
+                    <label for="available"> Available</label>
+                    <br>
+                    <br>
+
+                    <input type="radio" id="Reserved"
+                    name="Reserved"> 
+                    <label for="Reserved"> Reserved</label>
+                    <br>
+                    <br>
+                    
+                    <input type="radio" id="On hand"
+                    name="On hand"> 
+                    <label for="On hand"> On hand</label><br>
+                </div>
+                 <br>
+                <div>
+                    <center>
+                        <button type="submit">APPLY FILTER</button>
+                        <div>clear filter</div>
+                    </center>
+                </div>
+            
+            </div>
+        </div>
+
+
+        <div class="inner-body">
+            
+            <div class="top-top" style="">
+                <!-- <h2>Products</h2> -->
+                <a href="#">Products</a>
+                <a class="style-1" href="#">ADD SHOP</a>
+                <!-- <a class="style-2" href="#">ADD PRODUCT</a> -->
+
+
+                <div class="modal2">
+                   
+                    <div class="modalbtn2" onclick="addProduct()">
+                     <span class="modalbtn2">ADD PRODUCT</span>
+                   </div>
+                     <div class="modal-content2">
+
+                            <div class="input-container NAME">
+                                <label for="Product Name">Product Name</label>
+                                <br>
+                                <input type="text" id="name" value="" placeholder="Name"/>
+                            </div>
+                            <div class="input-container conditions">
+                                <label for="conditions">Conditions</label>
+                                <br>
+                                <input type="text" id="Conditions" class="sortimg" value="" placeholder="conditions"/>
+                            </div>
+                            <div class="input-container Category">
+                                <label for="Category">Category</label>
+                                <br>
+                                <input type="text" id="Category" class="sortimg" value="" placeholder="Catergory"/>
+                            </div>
+                            <div class="input-container Shop">
+                                <label for="Shop">Shop</label>
+                                <br>
+                                <input type="text" id="Shop" class="sortimg" value="" placeholder="Shop"/>
+                            </div>
+                            <div class="input-container Basic">
+                                <label for="Basic">Basic plans</label>
+                                <br>
+                                <textarea id="Basic plan" name="Basic plan" rows="5" cols="50" placeholder="300 words maximum"></textarea>
+                            </div>
+                            <center>
+                                <button  style="background-color:#093E9c"; type="submit" >UPLOAD PRODUCT</button>
+                           </center>
+                        </div>
+                    
+                </div> 
+
+
+                
+                <!-- <a class="style-1" class="import" onclick="toggleImport()">IMPORT</a> -->
+
+                <!-- <a class="dropdown">
+                    <a class="dropbtn style-1" onclick="toggleImport()">IMPORT</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </a>  -->
+                
+                <a class="style-1" href="#">EXPORT</a>
+                  <div class="modal">
+                    <div class="modal-wrapper">
+                            <span class="modalbtn" onclick="toggleImport()">IMPORT</span>
+                            <div class="modal-content">
+                                <center>
+                                    <div>
+                                       <strong>Do you want to import a new Stocka File? &nbsp;&nbsp; <span onclick="toggleImport()">x</span></strong> 
+                                        <div class="menu">
+                                            <p><input type="checkbox"> I understand that importing a new stocka file will
+                                            <br> override the existing file</p>
+                                        </div>   
+        
+                                        <div class="drive">
+                                            <div class="drivecontent">
+                                                <i class="fab fa-google-drive "></i>
+                                                <br>
+                                                import from google drive
+                                            </div>
+                                            <br>
+                                            <div class="drivecontent2">
+                                                <i class="fas fa-folder-plus"></i>
+                                                <br>
+                                                import from device folder
+                                            </div>
+                                        </div >
+                                        
+                                        <br><br>
+                                        <br><br>
+                                        <br><br>
+        
+                                        <!-- <center> -->
+                                            <div class="custom-file">
+                                                <!-- <input class ="style1" type="file"> -->
+                                                <div class="custom-upload">
+                                                    <label for="file-upload">
+                                                        Custom Upload &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="upload-button"> 
+                                                    Upload
+                                                </div>
+                                            </div>
+                                        <!-- </center> -->
+                                            <input id="file-upload" type="file"/> 
+        
+                                       
+                                       <br><br>
+                                        <button style="background-color:#093E9c; " type="submit">IMPORT</button>
+                                    </div>  
+                                </center>
+                            </div>
+                        </div> 
+        
+        
+                    </div>
+
+
+                      
+                  
+                </div>
+               
+        
+
+            <br>
+ 
+            <div style="overflow-x:auto;">
+
+                <table>
+                    <tr>
+
+                        <td> <input type="checkbox"></td>
+                        <td>NAME</td>
+                        <td>SKU</td>
+                        <td>CONDITION</td>
+                        <td>LOCATION</td>
+                        <td>AVAILABLE</td>
+                        <td>RESERVED</td>
+                        <td>ON HAND</td>
+                        <td>PRICE</td>
+                        <td>MODIFIED</td>
+                        
+                    </tr>
+
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sugar</td>
+                        <td>00003</td>
+                        <td>NEW</td>
+                        <td>SHOP02</td>
+                        <td>742</td>
+                        <td>3742</td>
+                        <td>742</td>
+                        <td>5599</td>
+                        <td>120621</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    
+    </div>
+   <script>
+        function toggleButton() {
+            var x = document.querySelector(".sidebar");
+
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else if(x.style.display === "block")  {
+                x.style.display = "none";
+            }
+        }
+
+        function toggleImport() {
+
+            var x = document.querySelector(".modal-content");
+
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else if(x.style.display === "block")  {
+                x.style.display = "none";
+            }
+           
+            
+        }
+
+         function addProduct () {
+            var x = document.querySelector(".modal-content2");
+            if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+            } else if(x.style.display === "block")  {
+            x.style.display = "none";
+            }
+         }
+   
+   </script>
+</div>
+</body>
+</html>
