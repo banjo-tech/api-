@@ -112,7 +112,7 @@
 
         <div class="inner-body">
             
-            <div class="top-top" style="">
+            <div class="top-top">
                 <!-- <h2>Products</h2> -->
                 <a href="#">Products</a>
                 <a class="style-1" href="#">ADD SHOP</a>
@@ -125,26 +125,26 @@
                      <span class="modalbtn2">ADD PRODUCT</span>
                    </div>
                      <div class="modal-content2">
-                         <form>
+                         <form id="form" action="" method="POST">
                             <div class="input-container NAME">
                                 <label for="Product Name">Product Name</label>
                                 <br>
-                                <input type="text" id="name" value="" placeholder="Name"/>
+                                <input type="text" id="product-name" value="" placeholder="Product name" required/>
                             </div>
                             <div class="input-container conditions">
                                 <label for="conditions">Conditions</label>
                                 <br>
-                                <input type="text" id="Conditions" class="sortimg" value="" placeholder="conditions"/>
+                                <input type="text" id="conditions" class="sortimg" value="" placeholder="conditions"/>
                             </div>
                             <div class="input-container Category">
                                 <label for="Category">Category</label>
                                 <br>
-                                <input type="text" id="category" class="sortimg" value="" placeholder="catergory"/>
+                                <input type="text" id="category" class="sortimg" value="" placeholder="category" required/>
                             </div>
                             <div class="input-container description">
                                 <label for="description">Description</label>
                                 <br>
-                                <input type="text" id= "description" class="sortimg" value="" placeholder="description"/>
+                                <input type="text" id= "description" class="sortimg" value="" placeholder="description" required/>
                             </div>
                             <div class="input-container Shop">
                                 <label for="Shop">Shop</label>
@@ -157,7 +157,7 @@
                                 <textarea id="Basic plan" name="Basic plan" rows="5" cols="50" placeholder="300 words maximum"></textarea>
                             </div>
                             <center>
-                                <button  style="background-color:#093E9c"; type="submit" >UPLOAD PRODUCT</button>
+                                <button  style="background-color:#093E9c" type="submit" >UPLOAD PRODUCT</button>
                            </center>
                          </form>
                         </div>
