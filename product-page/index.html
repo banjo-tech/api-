@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product page </title>
     <link rel="stylesheet" href="style.css">
-    <script src="./login.js" defer></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!-- <script src="./login.js" defer></script> -->
+    <script src="./category.js" defer></script>
 </head>
 <body>
     <div class="nav-bar">
@@ -124,7 +125,7 @@
                      <span class="modalbtn2">ADD PRODUCT</span>
                    </div>
                      <div class="modal-content2">
-
+                         <form>
                             <div class="input-container NAME">
                                 <label for="Product Name">Product Name</label>
                                 <br>
@@ -138,7 +139,12 @@
                             <div class="input-container Category">
                                 <label for="Category">Category</label>
                                 <br>
-                                <input type="text" id="Category" class="sortimg" value="" placeholder="Catergory"/>
+                                <input type="text" id="category" class="sortimg" value="" placeholder="catergory"/>
+                            </div>
+                            <div class="input-container description">
+                                <label for="description">Description</label>
+                                <br>
+                                <input type="text" id= "description" class="sortimg" value="" placeholder="description"/>
                             </div>
                             <div class="input-container Shop">
                                 <label for="Shop">Shop</label>
@@ -153,6 +159,7 @@
                             <center>
                                 <button  style="background-color:#093E9c"; type="submit" >UPLOAD PRODUCT</button>
                            </center>
+                         </form>
                         </div>
                     
                 </div> 

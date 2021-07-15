@@ -1,47 +1,13 @@
-
-    // async function postCategory(url = "",  post_data = "") {
-    //    const url = "http://stocka-zuri-api.herokuapp.com/api/category/";
-    //     await fetch (url,{
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify(post_data),
-    //     })
-    //     .then(response =>response.json())
-    //     .then(data => console.log(data))
-    //     .catch( error => console.log(error))
-
-    // }
-    // async function postCategory() {
-    //     const post_data = {
-    //         name : "benz", description: "car"
-    //     }
-    //    const url = "http://stocka-zuri-api.herokuapp.com/api/category/";
-       
-    //         const options={
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MTkxODgyLCJqdGkiOiI0ZmQwNmMxNjczNTE0M2EyYjc3NDdmMWE5MjlkZDk4YSIsInVzZXJfaWQiOjE5fQ.l-f5IQcuy0PiJg76T1jRl5mLSAoINi8nG3wiDlupTdc"
-    //         },
-    //         body: JSON.stringify(post_data),
-    //     }
-    //     await fetch (url,options)
-        
-    //     .then(response =>response.json())
-    //     .then(data => console.log(data))
-    //     .catch( error => console.log(error));
-    // }
-    const username = document.getElementById("username");
+const username = document.getElementById("username");
 const error = document.getElementById("error");
 const result = document.getElementById("result");
 const form = document.querySelector("#form");
-const token = localStorage.getItem("token");
+// const token = localStorage.getItem("token");
+const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MTkxODgyLCJqdGkiOiI0ZmQwNmMxNjczNTE0M2EyYjc3NDdmMWE5MjlkZDk4YSIsInVzZXJfaWQiOjE5fQ.l-f5IQcuy0PiJg76T1jRl5mLSAoINi8nG3wiDlupTdc"
 window.addEventListener("load", async () => {
   console.log("loaded");
 
-  username.innerHTML = localStorage.getItem("username");
+  // username.innerHTML = localStorage.getItem("username");
   //   const loginButton = document.getElementById("login");
 
   const url_postCategory =
@@ -87,3 +53,4 @@ async function postCategory(url = "", post_data = {}) {
       }
     })
     .catch((error) => console.log(error));
+  }
